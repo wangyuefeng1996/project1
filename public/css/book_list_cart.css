@@ -1,0 +1,268 @@
+#wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#wrapper>h1{
+  font-size: 26px;
+  word-wrap: break-word;
+  display: block;
+  font-weight: bold;
+  color: #494949;
+  padding-bottom: 15px;
+  margin: 0;
+  line-height: 1.1;
+  font-family: Helvetica;
+}
+
+.l2{
+  font: 14px Arial, Helvetica, sans-serif;
+  line-height: 150%;
+}
+
+.pl{
+  font: 13px Arial, Helvetica, sans-serif;
+  line-height: 150%;
+  color: #666666;
+}
+
+.ll{
+  float: left;
+}
+
+.font-13-37a{
+  font-size: 13px;
+  font-family: Helvetica;
+  color: #37a;
+}
+
+.font-13-37a:hover{
+  color: #fff;
+  background-color: #37a;
+  text-decoration: none;
+}
+
+#wrapper>p:nth-child(2):after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+span.ll.pl:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrapper p{
+  margin: 13px 0;
+}
+
+.book-title{
+  margin-bottom: 20px;
+  color: #3e3a39;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.book-title th,.book-list-content td{
+  padding: 12px 0;
+  font-size: 14px;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: normal;
+}
+.book-title th{
+  background-color: #f9f9f9;
+}
+.book-list-content td{
+  text-align: center;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.checkout{
+  width: 48px;
+}
+
+.book-title-info{
+  width: 335px;
+}
+.book-title-price{
+  width: 276px;
+}
+.book-title-picker{
+  width: 140px;
+}
+.book-title-amount{
+  width: 125px;
+}
+.book-title-actions{
+  width: 116px;
+}
+
+.book-list-content{
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+  overflow: auto;
+  font-size: 12px;
+  border-top: 1px solid #d8d8d8;
+  background-color: #fff !important;
+}
+
+.book-item td{
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.check-box{
+  width: 18px;
+  height: 18px;
+  outline: 0;
+}
+.cart-item{
+  clear: both;
+  overflow: hidden;
+  text-align: left;
+}
+.cart-item .item-pic{
+  float: left;
+  height: 100px;
+  width: 80px;
+}
+
+.cart-item .item-pic img{
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 80px;
+}
+
+.cart-item .cart-item-detail{
+  margin-left: 95px;
+  overflow: hidden;
+}
+
+.cart-item .cart-item-detail .item-title{
+  overflow: hidden;
+  zoom: 1;
+  font-size: 13px;
+}
+
+.cart-item .cart-item-detail .item-title a{
+  font-size: 14px;
+  color: #3e3a39;
+  font-weight: 500;
+}
+
+.cart-item .cart-item-detail .item-info p,.cart-item .cart-item-detail .item-title{
+  margin: 0 !important;
+}
+
+.cart-item .cart-item-detail .item-info{
+  margin-top: 10px;
+  overflow: hidden;
+  zoom: 1;
+  color: #6e6e6e;
+}
+
+.font-12-6e{
+  font-size: 12px;
+  color: #6e6e6e;
+  font-family: Helvetica;
+}
+.item-price,.item-amount{
+  font-size: 14px;
+  color: #dd1944;
+}
+.item-delete{
+  width: 48px;
+  height: 30px;
+  color: #d8d8d8;
+  padding: 9px 12px;
+  font-size: 12px;
+  border: 1px solid #d8d8d8;
+}
+.item-delete:hover{
+  color:#d8d8d8;
+}
+
+.cart-footer-wrapper{
+  position: fixed;
+  z-index: 1;
+  background-color: #f9f9f9;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.market-wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.cart-footer{
+  clear: both;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 15px 40px 15px 15px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cart-actions{
+  float: left;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+  font-family: Helvetica;
+}
+
+.color-red{
+  color:red;
+}
+.cart-info{
+  float: right;
+}
+.quantity-all{
+  margin-left: 65px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blank{
+  height: 100px;
+}
+.amount-all{
+  margin-right: 40px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.font-set{
+  font-size: 14px;
+  font-weight: 700;
+  color: #3e3a39;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.cart-info a{
+  width: 145px;
+  height: 36px;
+  display: inline-block;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #d8d8d8;
+  vertical-align: middle;
+  line-height: 16px;
+  font-weight: 700;
+}

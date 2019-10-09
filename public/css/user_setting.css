@@ -1,0 +1,344 @@
+#db-global-nav{
+  width: 100%;
+  min-width: 950px;
+  margin: 0 auto;
+  height: 28px;
+  background-color: #545652;
+}
+
+#db-global-nav:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#db-global-nav a{
+  height: 28px;
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+  line-height: 2;
+  color: #d5d5d5;
+  padding: 0 12px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#db-global-nav .nav-a{
+  float: right;
+}
+
+#erweima{
+  width: 253px;
+  height: 477px;
+  padding: 10px 20px 30px;
+  position: absolute;
+  right: 20px;z-index: 100;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-top: none;
+}
+
+.element{
+  display: none;
+}
+
+.father:hover .element{
+  display: block;
+}
+
+#erweima>div:first-child{
+  width: 211px;
+  height: 208px;
+  padding-top: 170px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  background: url(../img/nav_doubanapp_6.png) no-repeat center;
+}
+
+#erweima>div:nth-child(2){
+  width: 211px;
+  height: 160px;
+  margin-top: 30px;
+  padding-top: 160px;
+  background: url(../img/nav_doubanapp_6_qrcode.png) no-repeat center;
+}
+
+#erweima>div:last-child{
+  width: 211px;
+  height: 28px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+#erweima a{
+  display: inline-block;
+  width: 50px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #3377aa;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+
+#nav-wrap{
+  width: 100%;
+  min-width: 1040px;
+  overflow: hidden;
+  height: 70px;
+  background-color: #edf4ed;
+}
+
+#nav-primary{
+  width: 1040px;
+  height: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 22px 0 20px;
+}
+
+
+#nav-primary img{
+  width: 142px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+#wrapper{
+  width: 1040px;
+  margin: 20px auto 0px;
+}
+
+#content{
+  min-height: 420px;
+}
+
+#main-content{
+  width: 1040px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+
+#main-content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content>h1{
+  font-size: 26px;
+  word-wrap: break-word;
+  display: block;
+  font-weight: bold;
+  color: #494949;
+  padding-bottom: 15px;
+  margin: 0;
+  line-height: 1.1;
+  font-family: Helvetica;
+}
+
+#l-content{
+  width: 700px;
+  float: left;
+  padding-right: 25px;
+}
+
+#r-content{
+  width: 310px;
+  float: right;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+#r-content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#r-content>h2{
+  font-size: 15px;
+  color: #072;
+  margin: 0 0 12px;
+  line-height: 150%;
+  font-weight: bolder;
+}
+.clear {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.choose-bar{
+  background-color: #fef6ef;
+  background-image: none;
+  float: right;
+  width: 100%;
+  margin-bottom: 21px;
+  overflow: hidden;
+}
+
+.choose-bar>div:first-child{
+  height: 30px;
+  float: right;
+  margin-left: 5px;
+  padding-right: 35px;
+  background-color: #fef6ef;
+  background-image: none;
+}
+
+.choose-bar a{
+  float: right;
+  display: block;
+  text-decoration: none;
+  margin: 5px 5px 1px 5px;
+  padding: 3px 5px 2px 5px;
+  line-height: 14px;
+}
+
+.choose-bar span.now{
+  margin: 0 5px 0 5px;
+  float: right;
+  display: block;
+  padding: 0 10px 0 0;
+  border: 1px solid #faeee4;
+  background-color: #fff;
+  border-bottom: none !important;
+  border-radius: 5px;
+}
+
+.choose-bar span.now span{
+  display: block;
+  padding: 6px 1px 5px 11px;
+}
+
+.font-13-111{
+  font-size: 13px;
+  color: #111;
+  font-family: Helvetica;
+}
+
+.font-13-37a{
+  font-size: 13px;
+  color: #37a;
+  font-family: Helvetica;
+}
+
+.font-13-37a:hover{
+  background-color: #37a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-setting{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.setting{
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.setting:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.setting-label{
+  float: left;
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  width: 60px;
+  font-size: 13px;
+}
+
+.setting-field{
+  line-height: 40px;
+  position: relative;
+  margin-bottom: 10px;
+  margin: 0;
+  width: 350px;
+  display: inline-block;
+}
+
+.setting-input{
+  width: 280px;
+  height: 37px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid #e4e6e5;
+}
+
+.setting-field-tip{
+  display: block;
+  margin-top: 10px;
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.font-13-666{
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+.other>.setting-field>a{
+  width: 36px;
+  height: 36px;
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.other>.setting-field>a:last-child{
+  background-image: url(../img/weibo.png);
+}
+.other>.setting-field>a:first-child{
+  background-image: url(../img/weixin.png);
+}
+
+.account-form-field-submit{
+  position: relative;
+  width: 280px;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+.account-form-error{
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.password-submit{
+  background-color: #41ac52;
+  color: #fff;
+  display: inline-block;
+  height: 36px;
+  padding: 0 35px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  outline: 0;
+}
+
+.password-submit:hover{
+  color: #fff;
+}

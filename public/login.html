@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/comm.css"/>
+  <link rel="stylesheet" href="css/login.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--title-->
+<header>
+  <div id="nav-wrap">
+    <div id="nav-primary">
+      <a href="javascript:;">
+        <img src="img/title-douban.png" alt=""/>
+      </a>
+    </div>
+  </div>
+</header>
+<!--主体内容-->
+<div id="content">
+  <!--主体内容左半部分-->
+  <div id="login-left">
+    <div id="download">
+      <!--下载豆瓣App按钮-->
+      <a href="https://www.douban.com/doubanapp">下载豆瓣App</a>
+      <!--二维码的显示-->
+      <div class="father">
+        <a href="javascript:;">
+          <img src="img/ic_qr_mini_login.png" alt=""/>
+        </a>
+        <div id="erweima" class="element">
+          <img src="img/nav_doubanapp_6_qrcode.png" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--主题内容右半部分-->
+  <div id="login-right">
+    <div id="login-right-content">
+      <div class="title">
+        <ul>
+          <li class="on">密码登录</li>
+        </ul>
+      </div>
+      <div id="input-info">
+        <div><span id="msg" class="font-13-f00"></span></div>
+        <div>
+          <input type="text" placeholder="手机号" id="phone"/>
+        </div>
+        <div>
+          <input type="password" placeholder="密码" id="pwd"/>
+        </div>
+        <div>
+          <a id="login_btn" href="javascript:;" onclick="login()">登录豆瓣</a>
+        </div>
+      </div>
+      <!--确认下次和海外手机登录-->
+      <div class="font-13-333">
+        <p class="float-right"><a href="javascript:;">海外手机注册</a></p>
+        <p><input type="checkbox" id="auto-login"/><label for="auto-login">下次自动登录</label></p>
+      </div>
+      <a id="erweima-login" href="register.html"></a>
+      <div id="other-login">
+        <div>第三方登录</div>
+        <div>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<script>
+  function login(){
+    var $tele=phone.value;
+    var $upwd=pwd.value;
+    if(!$tele){
+      msg.innerHTML="手机号不能为空!";return;
+    }else if(!$upwd){
+      msg.innerHTML="密码不能为空!";return;
+    }
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4&&xhr.status==200){
+        var result=xhr.responseText;
+        if(result=="1"){
+          alert("登录成功");
+          location.href=`book_home_page.html?tele=${$tele}`;
+        }else{
+          alert("手机号或密码错误");
+        }
+      }
+    }
+    xhr.open("get",`/user/v1/login/${$tele}&${$upwd}`,true);
+    xhr.send(null);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+#wrapper{
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#home-page{
+  width: 100%;
+  height: 58px;
+  margin-bottom: 26px;
+  position: relative;
+  left: 0;
+  top: 0;
+  zoom: 1;
+}
+
+.pic{
+  float: left;
+  margin-right: 12px;
+}
+
+.pic img{
+  vertical-align: bottom;
+}
+
+.info{
+  padding-top: 0;
+  float: left;
+}
+.info h1{
+  padding-bottom: 4px;
+  font-size: 26px;
+  word-wrap: break-word;
+  display: block;
+  font-weight: bold;
+  color: #494949;
+  line-height: 1.1;
+  margin: 0;
+}
+.nav-list{
+  margin-top: 1px;
+}
+.nav-list li{
+  line-height: 17px;
+  font-size: 13px;
+  margin-right: 16px;
+  display: inline-block;
+  float: none;
+  text-align: left;
+}
+
+.nav-list a{
+  font-size: 13px;
+  font-family: Helvetica;
+  color: #37a;
+}
+.nav-list a:hover{
+  color: #fff;
+  background-color: #37a;
+  text-decoration: none;
+}
+.checked{
+  color: #fff !important;
+  background-color: #7f9981;
+  border-radius: 3px;
+  padding: 2px;
+}
+#l-content{
+  width: 715px;
+  float: left;
+  padding-right: 40px;
+}
+#l-content>h2{
+  width: 100%;
+  font-size: 16px;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
+  line-height: 150%;
+}
+
+.font-13-37a{
+  color: #3377aa !important;
+  font-size: 13px;
+  font-family: "Helvetica Neue";
+}
+
+.font-13-37a:hover{
+  color: #fff !important;
+  background-color: #3377aa;
+  text-decoration: none;
+}
+.font-13-666{
+  color: #666;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mod{
+  clear: both;
+  margin-bottom: 40px;
+}
+#l-content .mod{
+  margin-bottom: 20px;
+}
+.sub-list .list-s{
+  margin-right: -45px;
+  padding-left: 0;
+}
+
+.list-s{
+  clear: both;
+  margin-bottom: 8px;
+}
+.list-s:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.sub-list li{
+  width: 95px;
+  height: 130px;
+  overflow: hidden;
+  float: left;
+  margin-right: 45px;
+  margin-bottom: 20px;
+}
+.sub-list li img{
+  width: 90px;
+  height: 130px;
+}
+
+#r-content{
+  width: 300px;
+  float: right;
+}
+.book-user-info{
+  background-color: #f8f8f0;
+  padding: 18px;
+  position: relative;
+}
+
+#r-content .mod:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.basic-info{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f5e9db;
+}
+.basic-info:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.read-num{
+  margin: 0;
+  padding-top: 14px;
+  min-height: 20px;
+  border-top-color: #ececdc;
+}
+.setting{
+  float: right;
+  margin-top: 15px;
+}
+.nickname{
+  font-size: 16px;
+  color: #111;
+  font-family: Helvetica;
+  vertical-align: middle;
+  line-height: 24px;
+}
+.regtime{
+  font-size: 16px;
+  color: #666;
+  font-family: Helvetica;
+  vertical-align: middle;
+  line-height: 24px;
+}
+.avater{
+  float: left;
+  margin-right: 14px;
+}
+
+.number-item{
+  display: inline;
+  margin-right: 6px;
+}
+
+.number-label{
+  font-family: Helvetica;
+  font-size: 13px;
+  color: #666;
+}
+.number{
+  font-family: Helvetica;
+  font-size: 13px;
+  color: #111;
+}

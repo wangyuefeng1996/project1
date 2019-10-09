@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*使用scss编写comm.css——css reset*/
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;}
+
+@media screen and (min-width: 992px){
+  .my_footer_h{height: 20rem;}
+  .my_header_h{height: 9rem;}
+}
+@media screen and (max-width: 991px){
+  .my_footer_h{height: 35rem;}
+  .my_header_h{height: 12rem;}
+}
+
+a {
+  text-decoration: none; }
+
+
+ul,ol{
+  list-style: none; }
+
+ol{
+  padding: 0 0 0 20px;
+}
+
+p{
+  margin-bottom: 0 !important;
+}

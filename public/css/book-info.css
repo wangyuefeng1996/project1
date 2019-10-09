@@ -1,0 +1,407 @@
+#wapper{
+  width: 1040px;
+  margin: 10px auto 0;
+}
+
+h1{
+  word-wrap: break-word;
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #494949;
+  margin: 0;
+  padding: 0 0 15px 0;
+  line-height: 1.1;
+}
+
+.clear{
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+
+#content{
+  width: 100%;
+}
+
+.l-content{
+  width: 715px;
+  float: left;
+  padding-right: 40px;
+}
+.r-content{
+  width: 300px;
+  float: right;
+}
+
+.indent1{
+  word-break: break-all;
+}
+
+.indent1:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.info{
+  float: none;
+  width: auto;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.l-info{
+  width: 500px;
+  float: left;
+}
+
+.l-info>.book-pic{
+  float: left;
+  text-align: center;
+  margin: 3px 15px 0 0;
+  max-width: 155px;
+  overflow: hidden;
+}
+
+.l-info>.book-pic>img{
+  width: 135px;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+.book-info{
+  float: left;
+  max-width: 333px;
+  word-wrap: break-word;
+  font-size: 13px;
+  color: #111;
+}
+
+.r-info-all{
+  float: left;
+  width: 155px;
+  margin: 2px 0 0 0;
+  padding: 0 0 0 15px;
+  border-left: 1px solid #eaeaea;
+  color: #9b9b9b;
+}
+
+.r-info{
+  padding-bottom: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  clear: both;
+  width: 100%;
+}
+
+.r-info:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.font-13-37a{
+  color: #3377aa !important;
+  font-size: 13px;
+  font-family: "Helvetica Neue";
+}
+
+.font-13-37a:hover{
+  color: #fff !important;
+  background-color: #3377aa;
+  text-decoration: none;
+}
+
+.font-12-9b{
+  color: #9b9b9b;
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+}
+
+.r-info>div:nth-child(2){
+  padding: 0;
+  line-height: 2;
+}
+
+.r-info>div:nth-child(2):before{
+  content: '';
+  display: block;
+  clear: both;
+}
+.r-info>div:nth-child(2):after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.r-info>div:nth-child(2)>div:nth-child(2){
+  float: left;
+  padding: 10px 0 10px 6px;
+}
+
+.rating-num{
+  color: #494949;
+  padding: 0;
+  min-width: 30%;
+  font-size: 28px;
+  float: left;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.star-rating{
+  width: 75px;
+  height: 15px;
+  margin: 1px 0 0 0;
+  float: left;
+  overflow: hidden;
+  background-image: url(../img/ic_rating_m.png);
+  background-position: 0px -30px;
+}
+.clear-both{
+  clear: both;
+}
+
+#rating:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.r-info>.span-rating{
+  float: left;
+  margin-right: 5px;
+}
+
+.r-info .div-rating{
+  float: left;
+  height: 10px;
+  margin: 1px 4px;
+  background: #ffd596 none repeat scroll 0 0;
+}
+
+.wh-64{
+  width: 64px;
+}
+.wh-42{
+  width: 42px;
+}
+.wh-21{
+  width: 21px;
+}
+.wh-3{
+  width: 3px;
+}
+
+.read{
+  width: 100%;
+  height: 47px;
+  clear: both;
+  padding: 20px 0 3px;
+}
+
+.read>a{
+  letter-spacing: 3px;
+  overflow: hidden;
+  width: 51px;
+  display: block;
+  height: 24px;
+  font: normal 13px sans-serif;
+  margin-right: 10px;
+  text-decoration: none;
+  float: left;
+  background-color: #ffeada;
+  border: #d5bcaa solid 1px;
+  border-radius: 3px;
+  color: #111;
+  line-height: 24px;
+  text-align: center;
+}
+.font-13-111{
+  font-size: 13px;
+  color: #111;
+  font-family: Helvetica;
+}
+.font-13-666{
+  font-size: 13px;
+  color: #666;
+  font-family: Helvetica;
+}
+
+
+.read>div{
+  vertical-align: middle;
+  text-align: center;
+}
+
+.read>div>span{
+  display: inline-block;
+  width: 75px;
+  height: 16px;
+  background-image: url(../img/ic_rating_m.png);
+  background-position: 0px 16px;
+}
+
+.share{
+  padding: 4px 4px 0 0;
+  float: left;
+}
+
+.share:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.share>ul{
+  padding-top: 6px;
+  margin-left: -15px;
+}
+
+.share>ul>li{
+  float: left;
+  display: inline;
+  line-height: 14px;
+  margin-left: 15px;
+}
+.share>ul>li>img{
+  width: 10px;
+  height: 11px;
+}
+
+.recommend{
+  text-align: right;
+  float: right;
+}
+
+.recommend>a{
+  width: 44px;
+  height: 21px;
+  display: block;
+  color: #4f946e;
+  font-size: 13px;
+  font-family: Helvetica;
+  padding: 0 8px;
+  background-color: #f2f8f2;
+  border: 1px solid #e3f1ed;
+  border-radius: 3px;
+}
+
+.recommend>a:hover{
+  border-color: #b9dcd0;
+  text-decoration: none;
+}
+
+.related_info{
+  width: 100%;
+}
+
+.related_info>h2{
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #007722;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro p{
+  text-indent: 2em;
+  word-break: normal;
+}
+
+.indent{
+  word-break: break-all;
+}
+
+.online-read{
+  color: #999;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#r-content{
+  position: static;
+  left: 774px;
+  width: 300px;
+  float: right;
+}
+
+.gray_ad{
+  width: 100%;
+  padding: 30px 20px 25px 20px;
+  background-color: #f6f6f1;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.mb15{
+  margin-bottom: 15px;
+}
+
+.gray_ad>div:last-child{
+  border-top: 0 none;
+  padding-top: 0;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+#r-content h2{
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #007722;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#r-content ul>li{
+  padding: 10px 0;
+  position: relative;
+  line-height: 1;
+  overflow: hidden;
+}
+
+#r-content ul>li>a:last-child>span{
+  display: inline;
+  position: absolute;
+  right: 90px;
+  text-align: right;
+}
+.font-13-999{
+  font-size: 13px;
+  color: #999;
+  font-family: Helvetica;
+}
+
+.where-buy>li{
+  border-bottom: 1px solid #eaeaea;
+}
+
+h2.more-recommend{
+  font-size: 16px !important;
+  color: #007722;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
+  line-height: 150%;
+}
+
+.some-recommend{
+  margin-bottom: 40px;
+  word-break: break-all;
+}
+
+.some-recommend>ul>li{
+  width: 100%;
+  border-bottom: 1px dashed #ddd;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+.font-12-666{
+  font-size: 12px;
+  color: #666;
+  font-family: Helvetica;
+}

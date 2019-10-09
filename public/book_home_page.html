@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/comm.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/book_home_page.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body onload="getpage()">
+<header>
+  <div id="db-global-nav">
+    <div class="d-inline-block">
+      <ul class="nav">
+        <li><a class="d-inline-block" href="javascript:;">豆瓣</a></li>
+        <li><a class="d-inline-block" href="javascript:;">读书</a></li>
+        <li><a class="d-inline-block" href="javascript:;">电影</a></li>
+        <li><a class="d-inline-block" href="javascript:;">音乐</a></li>
+        <li><a class="d-inline-block" href="javascript:;">同城</a></li>
+        <li><a class="d-inline-block" href="javascript:;">小组</a></li>
+        <li><a class="d-inline-block" href="javascript:;">阅读</a></li>
+        <li><a class="d-inline-block" href="javascript:;">FM</a></li>
+        <li><a class="d-inline-block" href="javascript:;">时间</a></li>
+        <li><a class="d-inline-block" href="javascript:;">豆品</a></li>
+        <li><a class="d-inline-block" href="javascript:;">更多</a></li>
+      </ul>
+    </div>
+    <a class="d-inline-block nav-a">登录/注册</a>
+    <div class="father nav-a">
+      <a id="download-app" class="d-inline-block brother-showing" href="https://www.douban.com/doubanapp/frodo?wechat=0&os=Windows">下载豆瓣客户端
+      </a>
+      <div id="erweima" class="element">
+        <div>豆瓣</div>
+        <div>
+          <img src="" alt=""/>
+        </div>
+        <div id="download">
+          <a href="javascript:;">iPhone</a>·
+          <a href="javascript:;">Android</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="db-nav-book">
+    <div id="nav-first">
+      <div id="nav-main">
+        <div id="nav-logo" class="d-inline-block"><a class="font-weight-bold" href="index.html"><img src="img/lg_book_a11_1.png" alt=""/></a></div>
+        <div id="nav-search" class="align-items-center">
+          <input id="search" name="search_text" placeholder="书名、作者" type="text" class="d-inline-block">
+          <a id="commit" class="d-inline-block" href="javascript:;"><img class="pt-1 pl-1" src="img/search.png" alt=""/></a>
+        </div>
+      </div>
+    </div>
+    <div id="nav-second">
+      <ul class="nav">
+        <li><a href="">我读</a></li>
+        <li><a href="javascript:;">动态</a></li>
+        <li><a href="javascript:;">豆瓣猜</a></li>
+        <li><a href="javascript:;">分类浏览</a></li>
+        <li><a href="javascript:;">购书单</a></li>
+        <li><a href="javascript:;">电子图书</a></li>
+        <li><a href="">豆瓣书店</a></li>
+        <li><a href="javascript:;">2018年度榜单</a></li>
+        <li><a href="javascript:;">2018书影音报告</a></li>
+        <li><img src="img/icon_myorders.png" alt=""/><a href="">购物车</a></li>
+      </ul>
+    </div>
+    <a id="book2018" class="d-block" href=""></a>
+  </div>
+</header>
+<div id="wrapper">
+  <div id="home-page">
+    <div class="pic">
+      <a href="">
+        <img src="img/avater.jpg" alt="" width="48" height="48"/>
+      </a>
+    </div>
+    <div class="info">
+      <h1>口可口可的读书主页</h1>
+      <ul class="nav-list">
+        <li><a href="" class="checked">读书主页</a></li>
+        <li><a href="">在读</a></li>
+        <li><a href="">想读</a></li>
+        <li><a href="">读过</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="main-content">
+    <div id="l-content">
+      <h2><span>在读</span>
+        · · ·
+        <span class="font-13-666">（<a class="font-13-37a" href="">6本</a>）</span>
+      </h2>
+      <div class="mod">
+        <div class="sub-list">
+          <ul class="list-s">
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+      <h2><span>读过</span>
+        · · ·
+        <span class="font-13-666">（<a class="font-13-37a" href="">6本</a>）</span>
+      </h2>
+      <div class="mod">
+        <div class="sub-list">
+          <ul class="list-s">
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+      <h2><span>想读</span>
+        · · ·
+        <span class="font-13-666">（<a class="font-13-37a" href="">6本</a>）</span>
+      </h2>
+      <div class="mod">
+        <div class="sub-list">
+          <ul class="list-s">
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="img/book-1.jpg" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="r-content">
+      <div class="mod book-user-info">
+        <div class="basic-info">
+          <img class="avater" width="48" height="48" src="img/avater.jpg" alt=""/>
+          <div class="nickname">口可口可</div>
+          <div class="regtime">2019-08-21 加入</div>
+        </div>
+        <div class="setting">
+          <a class="font-13-37a" href="">分享设置</a>
+        </div>
+        <ul class="read-num">
+          <li class="number-item">
+            <span class="number-label">读过</span>&nbsp;
+            <span class="number">1</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div id="footer">
+    <span id="fleft">
+      © 2005－2019 douban.com, all rights reserved 北京豆网科技有限公司
+    </span>
+    <span id="fright">
+      <a class="font-a-13" href="javascript:;">关于豆瓣</a> ·
+      <a class="font-a-13" href="javascript:;">在豆瓣工作</a> ·
+      <a class="font-a-13" href="javascript:;">联系我们</a> ·
+      <a class="font-a-13" href="javascript:;">法律声明</a> ·
+      <a class="font-a-13" href="javascript:;">帮助中心</a> ·
+      <a class="font-a-13" href="javascript:;">图书馆合作</a> ·
+      <a class="font-a-13" href="javascript:;">移动应用</a> ·
+      <a class="font-a-13" href="javascript:;">豆瓣广告</a>
+    </span>
+  </div>
+</footer>
+<script>
+  function getUserInfoByTele(tele){
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4&&xhr.status==200){
+        var result=xhr.responseText;
+        if(result!="0"){
+          //json解析
+          var arr=JSON.parse(result);
+          var nickname=arr[0].nickname;
+          var h1=document.querySelector(".info h1");
+          h1.innerHTML=`${nickname}的读书主页`;
+        }else{
+          alert("获取失败!");
+        }
+      }
+    }
+    console.log(tele);
+    xhr.open("get",`/user/v1/getuser/${tele}`,true);
+    xhr.send(null);
+  }
+  function getUserBooks(tele){
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4&&xhr.status==200){
+        var result=xhr.responseText;
+        if(result!="0"){
+          //json解析
+          var arr=JSON.parse(result);
+          var nickname=arr[0].nickname;
+          var tag1=document.querySelector(".info h1");
+          tag1.innerHTML=`${nickname}的读书主页`;
+          var tag2=document.querySelector("a.d-inline-block.nav-a");
+          tag2.innerHTML=`${nickname}的账号`;
+          var tag3=document.querySelector(".nickname");
+          tag3.innerHTML=`${nickname}`;
+        }else{
+          alert("获取失败!");
+        }
+      }
+    }
+    xhr.open("get",`/user/v1/getuser/${tele}`,true);
+    xhr.send(null);
+  }
+  function getpage(){
+    //1.获取地址栏中的查询字符串
+    var urlparams=new URLSearchParams(location.search);
+    //2.获取查询字符串中的uid
+    var $tele=urlparams.get("tele");
+    getUserInfoByTele($tele);
+    getUserBooks($tele);
+  }
+</script>
+</body>
+</html>

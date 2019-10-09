@@ -1,0 +1,37 @@
+#footer{
+  width: 1040px;
+  height: 38px;
+  color: #999;
+  padding: 6px 0 10px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  zoom: 1;
+  border-top: 1px dashed #ddd;
+}
+
+#footer>#fleft{
+  float: left;
+  color: #999;
+  font-size: 13px;
+}
+
+#footer>#fright{
+  float: right;
+  color: #000;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  content: "¡¤";
+}
+
+#fright>.font-a-13{
+  font-size: 13px;
+  color: #3377aa;
+  font-family: "Helvetica Neue";
+}
+
+#fright>.font-a-13:hover{
+  color: #fff;
+  background-color: #3377aa;
+  text-decoration: none;
+}

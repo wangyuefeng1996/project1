@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/comm.css"/>
+  <link rel="stylesheet" href="css/register.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--title-->
+<header>
+  <div id="nav-wrap">
+    <div id="nav-primary">
+      <a href="javascript:;">
+        <img src="img/title-douban.png" alt=""/>
+      </a>
+    </div>
+  </div>
+</header>
+<!--主体内容-->
+<div id="content">
+  <!--主体内容左半部分-->
+  <div id="login-left">
+    <div id="download">
+      <!--下载豆瓣App按钮-->
+      <a href="https://www.douban.com/doubanapp">下载豆瓣App</a>
+      <!--二维码的显示-->
+      <div class="father">
+        <a href="javascript:;">
+          <img src="img/ic_qr_mini_login.png" alt=""/>
+        </a>
+        <div id="erweima" class="element">
+          <img src="img/nav_doubanapp_6_qrcode.png" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--主题内容右半部分-->
+  <div id="login-right">
+    <div id="login-right-content">
+      <div class="title">
+        <ul>
+          <li class="on">手机号注册</li>
+        </ul>
+      </div>
+      <div id="input-info">
+        <div class="font-13-9b">
+          请仔细阅读
+          <a class="" href="javascript:;">豆瓣使用协议、隐私政策</a>
+        </div>
+        <div><span id="msg" class="font-13-f00"></span></div>
+        <div>
+          <input type="text" placeholder="手机号" id="tele" onblur="check();"/>
+        </div>
+        <div>
+          <input type="password" placeholder="密码(大于5位)" id="upwd" onblur="inputpwd()"/>
+        </div>
+        <div>
+          <input type="password" placeholder="确认密码" id="cpwd" onblur="checkpwd()"/>
+        </div>
+        <!--上面的信息都不为空的时候，下面按钮透明度为0，否则为0.5；并且cursor不为小手-->
+        <div>
+          <a href="javascript:;" onclick="register()">注册豆瓣</a>
+        </div>
+      </div>
+      <!--确认下次和海外手机登录-->
+      <div class="font-13-333">
+        <p class="float-right"><a href="javascript:;">海外手机注册</a></p>
+        <p><input type="checkbox" id="auto-login"/><label for="auto-login">下次自动登录</label></p>
+      </div>
+      <a id="erweima-login" href="login.html"></a>
+      <div id="other-login">
+        <div>第三方登录</div>
+        <div>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<script>
+  var isReg=true
+  function check(){
+    var $tele=tele.value;
+    if(!$tele){
+      isReg=false;
+      msg.innerHTML="手机号不能为空!";return;
+    }else{
+      msg.innerHTML="";
+      var xhr=new XMLHttpRequest();
+      xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+          var result=xhr.responseText;
+          if(result=="1"){
+            msg.innerHTML="该手机号已被注册";
+            phone.style.borderColor="red";isReg=false;return;
+          }else{
+            msg.innerHTML="该手机号可以注册";return;
+          }
+        }
+      }
+      xhr.open("get",`/user/v1/check/${$tele}`,true);
+      xhr.send(null);
+    }
+  }
+  function inputpwd(){
+    var $upwd=upwd.value;
+    if(!$upwd){
+      isReg=false;
+      msg.innerHTML="密码不能为空!";
+      return;
+    }else if($upwd.length<6){
+      isReg=false;
+      msg.innerHTML="包含数字、字母、下划线的大于等于6位";
+      return;
+    }else{
+      msg.innerHTML="";
+    }
+  }
+  function checkpwd(){
+    var $cpwd=cpwd.value;
+    if($cpwd!=upwd.value){
+      msg.innerHTML="两次密码不一致";
+      isReg=false;return;
+    }else{
+      msg.innerHTML="";
+    }
+  }
+
+  function register(){
+    var $tele=tele.value;
+    check();inputpwd();checkpwd();
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4&&xhr.status==200){
+        var result=xhr.responseText;
+        if(result=="1"){
+          alert("注册成功");
+          location.href=`book_home_page.html?tele=${$tele}`;
+        }
+      }
+    }
+    xhr.open("post",`/user/v1/reg/`,true);
+    var formdata=`tele=${tele.value}&upwd=${upwd.value}`;
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    if(isReg==true){
+      xhr.send(formdata);
+    }else {
+      alert("注册失败");
+    }
+  }
+</script>
+</body>
+</html>

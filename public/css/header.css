@@ -1,0 +1,198 @@
+#db-global-nav{
+  width: 100%;
+  min-width: 950px;
+  height: 28px;
+  background-color: #545652;
+}
+
+#db-global-nav a{
+  height: 28px;
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+  line-height: 2;
+  color: #d5d5d5;
+  padding: 0 12px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#db-global-nav .nav-a{
+  float: right;
+}
+a{
+  cursor: pointer;
+}
+
+#db-nav-book{
+  width: 100%;
+  min-width: 1040px;
+  height: 115px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background-color: #f6f6f1;
+  position: relative;
+}
+
+#nav-first{
+  height: 75px;
+  border-bottom: 1px solid #e5ebe4;
+}
+
+#nav-main{
+  width: 1040px;
+  height: 74px;
+  margin: 0 auto;
+  overflow: visible !important;
+  position: relative;
+  padding: 10px 0 5px;
+}
+
+#nav-logo{
+  float: left;
+  height: 56px;
+  width: 145px;
+  margin: 0 13px 0 0;
+}
+
+#nav-logo>a{
+  height: 63px;
+  color: #583f26;
+  font-size: 30px;
+  font-family: "Helvetica Neue";
+}
+
+#nav-search{
+  height: 882px;
+  height: 59px;
+  margin-left: 145px;
+  overflow: visible !important;
+  position: relative;
+  zoom: 1;
+  padding: 10px 0 15px 0;
+}
+
+#search{
+  width: 462px;
+  height: 30px;
+  background: #fff;
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  position: absolute;
+  border-radius: 0.3rem;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+#commit{
+  width: 30px;
+  height: 30px;
+  background-color: #9d9c92;
+  border-radius: 0.3rem;
+  font-size: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 463px;
+  color: transparent;
+  cursor: pointer;
+}
+
+#nav-second{
+  width: 1040px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#nav-second>.nav{
+  margin: 9px 0;
+}
+
+#nav-second li{
+  margin-right: 25px;
+}
+
+#nav-second li>a{
+  color: #614e3c;
+  font-size: 14px;
+}
+
+#nav-second li>a:hover{
+  background-color: #614a3c;
+  color: #fff;
+  text-decoration: none;
+}
+
+#book2018{
+  width: 186px;
+  height: 96px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: 250px;
+  background-image: url(../img/annual_2018.png);
+  background-size: contain;
+}
+
+#erweima{
+  width: 253px;
+  height: 477px;
+  padding: 10px 20px 30px;
+  position: absolute;
+  right: 20px;z-index: 100;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-top: none;
+}
+
+.element{
+  display: none;
+}
+
+.father:hover .element{
+  display: block;
+}
+
+#erweima>div:first-child{
+  width: 211px;
+  height: 208px;
+  padding-top: 170px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  background: url(../img/nav_doubanapp_6.png) no-repeat center;
+}
+
+#erweima>div:nth-child(2){
+  width: 211px;
+  height: 160px;
+  margin-top: 30px;
+  padding-top: 160px;
+  background: url(../img/nav_doubanapp_6_qrcode.png) no-repeat center;
+}
+
+#erweima>div:last-child{
+  width: 211px;
+  height: 28px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+#erweima a{
+  display: inline-block;
+  width: 50px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #3377aa;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+
+

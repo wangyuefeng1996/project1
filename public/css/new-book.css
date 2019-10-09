@@ -1,0 +1,157 @@
+#wrapper{
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#content{
+  min-height: 420px;
+}
+
+#main-content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content>h1{
+  font-size: 26px;
+  word-wrap: break-word;
+  display: block;
+  font-weight: bold;
+  color: #494949;
+  padding-bottom: 15px;
+  margin: 0;
+  line-height: 1.1;
+  font-family: Helvetica;
+}
+
+.fix-top{
+  display: none;
+  position: fixed;
+  top: 0;
+  background: rgba(255,255,255,0.96);
+}
+.fix-top:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.ml{
+  margin-left: 570px !important;
+}
+
+.second-title{
+  margin: 0;
+  padding: 15px 0;
+  color: #494949;
+  width: 470px;
+  font-size: 16px;
+}
+
+.l-content{
+  float: left;
+  width: 470px;
+  padding: 0;
+  margin: 0;
+}
+
+.r-content{
+  float: right;
+  width: 470px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.l-content>h2,.r-content>h2{
+  color: #494949;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 150%;
+}
+
+.l-content>ul:after,.r-content>ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.l-content>ul>li,.r-content>ul>li{
+  height: 145px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 10px 15px 0;
+}
+
+.book-pic{
+  width: 100px;
+  float: left;
+  display: block;
+}
+
+.book-pic>img{
+  width: 100px;
+  border-width: 0;
+  vertical-align: middle;
+}
+
+.book-info{
+  display: block;
+  margin-left: 120px;
+}
+
+.book-info>h2{
+  font-size: 16px;
+  margin-bottom: 9px;
+}
+
+.book-info>h2>a{
+  font-size: 16px;
+  color: #37a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-info>h2>a:hover{
+  color: #fff;
+  background-color: #37a;
+  text-decoration: none;
+}
+
+.book-info>p{
+  line-height: 16px !important;
+  margin-bottom: 11px !important;
+}
+
+.font-13-49{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #494949;
+}
+.font-13-111{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #111;
+}
+
+.rating{
+  overflow: hidden
+}
+
+.allstar45{
+  width: 55px;
+  height: 11px;
+  margin: 0 3px 0 0;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+  background-image: url(../img/ic_rating_s.png);
+  background-position: 0px 0px;
+}
+
+.font-ml3-12-9b{
+  font-size: 12px;
+  font-family: Helvetica;
+  color: #9b9b9b;
+  margin-left: 3px;
+}
